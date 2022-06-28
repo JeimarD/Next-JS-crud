@@ -20,6 +20,9 @@ export default function Home({ movies }) {
           <div className="card mb-2" key={_id}>
             <div className="h5 text-uppercase">{title}</div>
             <p className="fw-light">{plot}</p>
+            <Link href={`/${_id}`}>
+              <a className="btn btn-success btn-sm">Mas Info</a>
+            </Link>
           </div>
         ))}
       </main>
